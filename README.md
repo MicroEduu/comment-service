@@ -96,12 +96,6 @@ A aplicação estará disponível em:
 | PATCH  | /api/Comment/{id}				 | Atualiza parcialmente um comentário (se for o autor ou admin). |
 | GET    | /api/Comment/by-course/{courseId} | Retorna informações do usuário com base no token.			  |
 
-> Para acessar rotas protegidas, inclua o token no header `Authorization`:
->
-> `Authorization: Bearer <token_aqui>`
-
----
-
 ### Exemplo de requisição para criar Comentário:
 
 ```json
@@ -145,6 +139,11 @@ PATCH /api/Comment/12
   "createdAt": "2025-06-20T16:00:00Z"
 }
 ```
+> Para acessar rotas protegidas, inclua o token no header `Authorization`:
+>
+> `Authorization: Bearer <token_aqui>`
+
+---
 ## 🛠️ Observações
 
 - O token acima é um exemplo fixo para fins de teste.
