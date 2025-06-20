@@ -89,9 +89,9 @@ A aplicação estará disponível em:
 
 | Método | Endpoint							 | Descrição													  |
 |--------|-----------------------------------|----------------------------------------------------------------|
-| PUT    | /api/Comment						 | Lista todos os comentários.									  |
+| GET    | /api/Comment						 | Lista todos os comentários.									  |
 | GET    | /api/Comment/{id}				 | Busca um comentário por ID.									  |
-| GET    | /api/Comment						 | Cria um novo comentário										  |
+| POST    | /api/Comment						 | Cria um novo comentário										  |
 | DELETE | /api/Comment/{id}				 | Remove um comentário (se for o autor ou admin).				  |
 | PATCH  | /api/Comment/{id}				 | Atualiza parcialmente um comentário (se for o autor ou admin). |
 | GET    | /api/Comment/by-course/{courseId} | Retorna informações do usuário com base no token.			  |
